@@ -1,8 +1,7 @@
 RewriteEngine On
 
 # Allow access to existing files (CSS, JS, images)
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !\.(css|js|png|jpg)$ [NC]
 
 # Redirect everything else to index.php
 
