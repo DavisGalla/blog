@@ -11,6 +11,6 @@ if (isset($_GET['search']) && $_GET['search']!=""){
 
     $posts = $db->query($select, $params)->fetchAll();
 
-    require "views/categories.view.php";
+    require "views/categories/index.view.php";
  
 ?>
